@@ -5,8 +5,8 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.activations import softmax
 import keras
 from PIL import Image, ImageOps
-import io
-import cv2
+# import io
+import opencv-python-headless as cv2
 
 # 🔧 Patch for missing 'softmax_v2' activation
 tf.keras.utils.get_custom_objects()['softmax_v2'] = tf.nn.softmax
@@ -82,4 +82,5 @@ if st.button("🔮 Predict"):
 
 # Clear instructions
 st.caption("Tip: Use your mouse or touchscreen to draw a digit, then click Predict.")
+
 
