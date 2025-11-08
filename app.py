@@ -14,7 +14,7 @@ tf.keras.utils.get_custom_objects()['softmax_v2'] = tf.nn.softmax
 # Load your trained model
 @st.cache_resource
 def load_mnist_model():
-    model = load_model(r"E:\Project\MNIST Digit recognition\Digit_Recognition_trained_model(0.3)(0.4).h5", compile=False)
+    model = load_model(r"Digit_Recognition_trained_model(0.3)(0.4).h5", compile=False)
     return model
 
 model = load_mnist_model()
@@ -82,6 +82,7 @@ if st.button("🔮 Predict"):
 
 # Clear instructions
 st.caption("Tip: Use your mouse or touchscreen to draw a digit, then click Predict.")
+
 
 
 
